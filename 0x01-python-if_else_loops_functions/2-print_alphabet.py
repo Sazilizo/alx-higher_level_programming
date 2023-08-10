@@ -3,4 +3,4 @@
 characters = "abcdefghijklmnopqrstuvwxyz"
 
 for i in characters:
-    print(i, end="")
+    print(f"{i}",end="")
