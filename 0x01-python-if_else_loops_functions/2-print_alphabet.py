@@ -2,5 +2,5 @@
 
 characters = "abcdefghijklmnopqrstuvwxyz"
 
-for i in characters:
-    print(f"{i}",end="")
+for i in range(97, 123):
+    print("{}".format(chr(i)), end="")
