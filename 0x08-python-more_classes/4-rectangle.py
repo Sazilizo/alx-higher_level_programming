@@ -86,4 +86,4 @@ class Rectangle:
         return signs
 
     def __repr__(self):
-        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+        return "Rectangle({:d}, {:d})".format(self._width, self._height)
