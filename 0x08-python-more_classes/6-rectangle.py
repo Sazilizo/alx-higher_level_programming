@@ -10,6 +10,8 @@ that has a getter and setter for both width and height
 class Rectangle:
     """A Rectangle class with attributes  width and height"""
 
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """
        Initialize a Rectangle instance with a given width and height.
@@ -19,6 +21,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
