@@ -54,8 +54,8 @@ class Rectangle:
         return self._height
 
     @height.setter
-    def height(self,height):
-        if not(isinstance(height,int)):
+    def height(self, height):
+        if not(isinstance(height, int)):
             raise TypeError("width must be an integer")
         elif height < 0:
             raise ValueError("height must be >= 0")
