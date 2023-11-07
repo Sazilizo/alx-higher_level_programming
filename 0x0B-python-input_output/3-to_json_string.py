@@ -15,5 +15,4 @@ def to_json_string(my_obj):
         encoded json string
     """
 
-    to_json = json.dumps(my_obj)
-    return (to_json)
+    return (json.dumps(my_obj))
