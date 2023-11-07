@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-import json
 """ A module that encodes a python string to json"""
+import json
 
 
 def to_json_string(my_obj):
@@ -14,5 +14,5 @@ def to_json_string(my_obj):
     return:
         encoded json string
     """
-
-    return (json.dumps(my_obj))
+    to_json = json.dumps(my_obj)
+    return (to_json)
