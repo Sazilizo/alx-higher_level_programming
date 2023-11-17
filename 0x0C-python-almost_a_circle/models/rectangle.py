@@ -19,10 +19,10 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """Inittializing all the attributes"""
         super().__init__(id)
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
     @property
     def height(self):
@@ -104,11 +104,18 @@ class Rectangle(Base):
             self.__y = value
 
     def area(self):
+        """
+        This prints out the area of a rectangle
+        """
         return self.width * self.height
 
     def display(self):
+        """
+        Displays # in place of height and width
+        """
         for i in range(self.__height):
             print("#" * self.width)
 
     def __str__(self):
+        """prints the string representation of class"""
         return "[Rectangle] (<{}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
