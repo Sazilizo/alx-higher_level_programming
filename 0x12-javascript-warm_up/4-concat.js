@@ -2,4 +2,6 @@
 
 const { argv } = require('node:process');
 
-console.log(`${argv[2]} is ${argv[3]} `);
+for (let i = 2; i < 3; i++) {
+	console.log(`${argv[2]} is ${argv[3]}`);
+}
