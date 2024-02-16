@@ -1,0 +1,11 @@
+The ``0-add_integer'' module
+============================
+
+Usin ``add_integer``
+-------------------
+
+Importing the function from the module:
+	>>> from 0-add_integer import add_integer
+
+	>>> add_integer(4,5)
+	9
