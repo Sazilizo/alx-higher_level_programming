@@ -1,13 +1,13 @@
 #!/usr/bin/node
 
-const { argv } = require('node:process');
 
-const loopLimit = parseInt(argv[2]);
-
-if (isNaN(loopLimit)) {
+if (process.argv[2] === undefined || isNaN(process.argv[2])) {
   console.log('Missing size');
 } else {
-  for (let i = 0; i < loopLimit; i++) {
-    console.log('x'.repeat(loopLimit));
+  const x = parseInt(process.argv[2]);
+  let i = 0;
+  while (i < x) {
+    console.log('X'.repeat(x));
+    i++;
   }
 }
