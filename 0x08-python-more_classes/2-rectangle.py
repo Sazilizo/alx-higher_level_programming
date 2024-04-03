@@ -37,7 +37,7 @@ class Rectangle:
         if width > 0 raise ValueErorr
         if width is not of int type, raise TypeError
         """
-        if not(isinstance(width, int)):
+        if not (isinstance(width, int)):
             raise TypeError("width must be an integer")
         elif width < 0:
             raise ValueError("width must be >= 0")
@@ -55,7 +55,7 @@ class Rectangle:
 
     @height.setter
     def height(self, height):
-        if not(isinstance(height, int)):
+        if not (isinstance(height, int)):
             raise TypeError("width must be an integer")
         elif height < 0:
             raise ValueError("height must be >= 0")
